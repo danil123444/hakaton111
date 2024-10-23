@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Университеты России - Нейроинтерфейсы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Университеты России</h1>
+        <h2>Специальности по конструированию нейроинтерфейсов</h2>
+    </header>
+    <main>
+        <section id="universities">
+            <h3>Список университетов</h3>
+            <ul id="university-list"></ul>
+        </section>
+        <section id="add-university">
+            <h3>Добавить университет</h3>
+            <input type="text" id="university-name" placeholder="Название университета">
+            <button onclick="addUniversity()">Добавить</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Информация о университетах</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

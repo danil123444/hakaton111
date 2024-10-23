@@ -1,0 +1,24 @@
+const universityList = [];
+
+function addUniversity() {
+    const universityInput = document.getElementById('university-name');
+    const universityName = universityInput.value.trim();
+
+    if (universityName) {
+        universityList.push(universityName);
+        universityInput.value = '';
+        renderUniversityList();
+    } else {
+        alert('Пожалуйста, введите название университета.');
+    }
+}
+
+function renderUniversityList() {
+    const listElement = document.getElementById('university-list');
+    listElement.innerHTML = '';
+    universityList.forEach((university) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = university;
+        listElement.appendChild(listItem);
+    });
+}
